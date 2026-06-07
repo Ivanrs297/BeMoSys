@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BeMoSys — Beyond the Model: ML Systems, Federated Learning, and MLOps · MICAI 2026</title>
+  <meta name="description" content="BeMoSys is a half-day academic workshop at MICAI 2026 (Chihuahua, Mexico) on Machine Learning Systems, Federated Learning, and MLOps. Proposal currently under review." />
+  <link rel="icon" type="image/png" href="images/icon_logo_square.png" />
+  <link rel="apple-touch-icon" href="images/icon_logo_square.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <img src="images/full_logo_landscape.png" alt="BTM-MLSys workshop logo" class="brand-logo" />
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#topics">Topics</a>
+        <a href="#program">Program</a>
+        <a href="#organizers">Organizers</a>
+        <a href="#committee">Committee</a>
+        <a href="#cfp">Call for Papers</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <div class="container">
+        <div class="status-banner" role="status">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span><strong>Workshop status:</strong> Proposal under review at MICAI 2026</span>
+        </div>
+
+        <p class="kicker">MICAI 2026 · Workshop Proposal · BeMoSys</p>
+        <h1>Beyond the Model: Workshop on Machine&nbsp;Learning Systems, Federated&nbsp;Learning, and MLOps</h1>
+        <p class="lede">
+          A focused academic forum on operationalizing machine learning at scale —
+          reproducible pipelines, drift monitoring, model governance, and
+          privacy-preserving learning across decentralized data.
+        </p>
+
+        <dl class="facts">
+          <div><dt>Venue</dt><dd>25th Mexican International Conference on Artificial Intelligence (MICAI 2026)</dd></div>
+          <div><dt>Location</dt><dd>Chihuahua, Mexico</dd></div>
+          <div><dt>Dates</dt><dd>November 2–6, 2026</dd></div>
+          <div><dt>Format</dt><dd>Half day (4 hours) · English</dd></div>
+          <div><dt>Proceedings</dt><dd>Springer LNAI (subject to MICAI 2026 acceptance)</dd></div>
+          <div><dt>Acronym</dt><dd>BeMoSys</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container narrow">
+        <h2>About the Workshop</h2>
+        <p>
+          Training a high-accuracy model in a controlled setting is only a small part of
+          delivering machine learning that works in the real world. The harder,
+          less-published problems lie in <strong>operationalizing ML</strong> —
+          reproducible pipelines, continuous training and delivery, monitoring for data
+          and concept drift, governance, and the engineering discipline collectively
+          known as <strong>MLOps</strong> — and in <strong>learning across decentralized,
+          privacy-sensitive data</strong> through <strong>Federated Learning</strong>.
+          These strands meet under the broader umbrella of <em>machine learning systems</em>:
+          how models are built, deployed, maintained, and trusted at scale.
+        </p>
+        <p>
+          BeMoSys aims to create a focused forum at MICAI 2026 where researchers and
+          practitioners from Mexico, Latin America, and the broader international
+          community can share recent results, exchange engineering experience, and
+          discuss open problems at the intersection of ML systems, Federated Learning,
+          and MLOps. Special attention is given to settings common in the region:
+          heterogeneous data sources, limited infrastructure, regulatory constraints on
+          data sharing, and the need for cost-efficient, maintainable systems.
+        </p>
+
+        <h3>Specific Objectives</h3>
+        <ul class="objective-list">
+          <li>Provide a peer-reviewed venue for original work on FL algorithms (Byzantine robustness, heterogeneity, privacy) and on MLOps practices (CI/CD for ML, drift monitoring, model governance).</li>
+          <li>Surface real deployment experience, including negative results and engineering lessons rarely captured in mainstream conference tracks.</li>
+          <li>Foster collaboration between academia and industry around deployable, trustworthy ML systems.</li>
+          <li>Strengthen the regional community working on production ML and privacy-preserving learning.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="topics" class="section section-alt">
+      <div class="container">
+        <h2>Scope and Topics of Interest</h2>
+        <p class="section-intro">
+          We invite original research papers, position papers, and experience reports
+          across three thematic axes. Topics include, but are not limited to:
+        </p>
+
+        <div class="topic-grid">
+          <article class="topic-card">
+            <h3>Federated Learning</h3>
+            <ul>
+              <li>Heterogeneity &amp; non-IID data</li>
+              <li>Byzantine-robust aggregation</li>
+              <li>Personalized &amp; cross-silo FL</li>
+              <li>Communication efficiency</li>
+              <li>Federated foundation models</li>
+            </ul>
+          </article>
+
+          <article class="topic-card">
+            <h3>MLOps &amp; ML Systems</h3>
+            <ul>
+              <li>CI/CD pipelines for ML</li>
+              <li>Data &amp; concept drift monitoring</li>
+              <li>Model/version &amp; data lineage</li>
+              <li>Reproducibility &amp; experiment tracking</li>
+              <li>Serving, scaling &amp; cost efficiency</li>
+            </ul>
+          </article>
+
+          <article class="topic-card">
+            <h3>Trust, Privacy &amp; Applications</h3>
+            <ul>
+              <li>Differential privacy &amp; security</li>
+              <li>Model governance &amp; auditing</li>
+              <li>Trustworthy / responsible ML</li>
+              <li>Medical &amp; industrial applications</li>
+              <li>LLMOps in production</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="footnote">
+          <strong>Relation to prior workshops.</strong> BeMoSys deliberately unites
+          Federated Learning and MLOps under a single systems-oriented program, and
+          anchors it in the Latin American research context that MICAI serves — an
+          audience under-represented in international editions such as FL@FM (NeurIPS
+          2023–2024), the FL tracks at ICML and ICLR, MLOps sessions at ICML 2025,
+          and the Deployable AI workshop series at AAAI (2024–2026).
+        </p>
+      </div>
+    </section>
+
+    <section id="program" class="section">
+      <div class="container narrow">
+        <h2>Format and Tentative Program</h2>
+        <p>
+          A <strong>half-day, four-hour</strong> agenda balances peer-reviewed
+          presentations with a hands-on MLOps tutorial and discussion, designed for
+          an intimate, dynamic forum.
+        </p>
+
+        <div class="schedule">
+          <table>
+            <caption class="visually-hidden">Tentative workshop schedule</caption>
+            <thead>
+              <tr><th scope="col">Time</th><th scope="col">Session</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>0:00 – 0:15</td><td>Opening and overview by the organizers</td></tr>
+              <tr><td>0:15 – 1:00</td><td>Invited keynote on ML systems / Federated Learning / MLOps</td></tr>
+              <tr><td>1:00 – 1:40</td><td>Tutorial I — Hands-on MLOps: pipelines, CI/CD, and reproducibility</td></tr>
+              <tr><td>1:40 – 2:00</td><td>Break</td></tr>
+              <tr><td>2:00 – 3:00</td><td>Contributed paper presentations (Session I) and posters</td></tr>
+              <tr><td>3:00 – 3:30</td><td>Panel / open discussion on open problems and regional deployment</td></tr>
+              <tr><td>3:30 – 3:55</td><td>Contributed paper presentations (Session II)<sup>*</sup></td></tr>
+              <tr><td>3:55 – 4:00</td><td>Closing remarks</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="footnote">
+          <sup>*</sup> The agenda is indicative and will be finalized based on the
+          number of accepted papers. If submissions are limited, Session II will be
+          replaced by a second 40-minute hands-on MLOps tutorial (e.g., model
+          monitoring, drift detection, and deployment).
+        </p>
+      </div>
+    </section>
+
+    <section id="organizers" class="section section-alt">
+      <div class="container">
+        <h2>Organizing Committee</h2>
+
+        <div class="organizer-grid">
+          <article class="organizer-card">
+            <h3>Dr. Iván Reyes Amezcua <span class="role">— Workshop Chair</span></h3>
+            <p class="affiliation">Tecnológico de Monterrey &amp; AI Specialist, Layer7</p>
+            <p>
+              PhD in Computer Science (CINVESTAV), specializing in robust and
+              scalable ML systems. Doctoral research on deep learning, federated
+              learning, adversarial robustness, and computer vision, with applications
+              in medical imaging — recipient of Best Paper Awards at MICAI, MICCAI, and
+              CVPR Workshops. AI Specialist at Layer7 leading LLM architectures,
+              multi-agent systems, voice (TTS/STT) pipelines, and large-scale RAG
+              solutions. University professor and MLflow Ambassador (Databricks), with a
+              strong emphasis on MLOps and reproducibility.
+            </p>
+            <p class="contact"><a href="mailto:reyes.ivan@tec.mx">reyes.ivan@tec.mx</a></p>
+          </article>
+
+          <article class="organizer-card">
+            <h3>Dr. Gerardo Rodríguez-Hernández <span class="role">— Co-chair</span></h3>
+            <p class="affiliation">Research Professor, Department of Computing, Tecnológico de Monterrey (Guadalajara)</p>
+            <p>
+              Member of the Advanced Artificial Intelligence Research Group. MSc in
+              Applied Artificial Intelligence (University of Exeter, UK) and PhD from
+              the University of Oxford (UK). Member of the National System of
+              Researchers (SNI, Level I). Background spans applied AI, embedded
+              software, and the supervision of award-winning graduate ML projects.
+            </p>
+          </article>
+
+          <article class="organizer-card">
+            <h3>Dr. Gilberto Ochoa-Ruiz <span class="role">— Co-chair</span></h3>
+            <p class="affiliation">Director, PhD Program in Computer Science, Tecnológico de Monterrey (Guadalajara)</p>
+            <p>
+              Member of the Advanced AI Research Group / CV-inside lab. PhD in
+              Electronic Imaging and Computer Vision (Université de Bourgogne), member
+              of the SNI (Level I), with research in computer vision, endoscopic image
+              analysis, and explainable AI. Reviewer for ICLR, ICML, CVPR, and MICCAI,
+              and chair of the LatinX in Computer Vision workshops at CVPR and ICCV.
+            </p>
+          </article>
+
+          <article class="organizer-card">
+            <h3>M.Sc. Ricardo Valdez Hernández <span class="role">— Co-chair</span></h3>
+            <p class="affiliation">Data Scientist, Wizeline &amp; Lecturer, Tecnológico de Monterrey (ITESM)</p>
+            <p>
+              Actuary (UNAM) and M.Sc. in Data Science (ITESO) with 14 years of
+              experience in the rigorous application of mathematical algorithms to data
+              problems. Data Scientist at Wizeline and lecturer at Tecnológico de
+              Monterrey (ITESM), including on MLOps and applied AI. Work centers on
+              scalable solutions in business intelligence, data engineering, and
+              predictive modeling, with a focus on recommender engines, knowledge
+              graphs, and MLOps.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="committee" class="section">
+      <div class="container">
+        <h2>Program Committee</h2>
+        <p class="section-intro">
+          The Program Committee brings together expertise across the three thematic
+          axes — federated learning and robustness, MLOps / ML engineering and data
+          governance, and applied ML across industry and medical domains — combining
+          academic and industry profiles. Reviews will follow a <strong>double-blind</strong>
+          process (target: 2–3 reviews per paper). Additional members may be confirmed
+          before the camera-ready version.
+        </p>
+
+        <div class="schedule">
+          <table>
+            <caption class="visually-hidden">Program Committee members</caption>
+            <thead>
+              <tr>
+                <th scope="col">Member</th>
+                <th scope="col">Affiliation</th>
+                <th scope="col">Area</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Dr. Miguel González-Mendoza</td><td>Research Professor, Tecnológico de Monterrey</td><td>Machine learning, generative AI</td></tr>
+              <tr><td>Dr. Jorge Enrique González Zapata</td><td>Adjunct Professor, Tecnológico de Monterrey</td><td>ML, statistics, time series, data governance</td></tr>
+              <tr><td>Dr. Iván Huerta</td><td>Sr. Data Scientist, DD360; Extension Lecturer, Tec de Monterrey</td><td>Applied AI, MLOps, recommender systems</td></tr>
+              <tr><td>Dr. Salvador Hinojosa</td><td>Professor, Tecnológico de Monterrey</td><td>Software quality, testing, simulation</td></tr>
+              <tr><td>Dr. Rubén Alvarez</td><td>Sr. Expert Data Scientist, BBVA AI Factory; Lecturer, Tec de Monterrey / U. Panamericana</td><td>Applied data science, ML in industry</td></tr>
+              <tr><td>Dr. Francisco Lopez-Tiro</td><td>Tecnológico de Monterrey / Université de Lorraine</td><td>Computer vision, medical imaging</td></tr>
+              <tr><td>Dr. Iván Alejandro García Ramírez</td><td>Data Scientist, BBVA AI Factory; Lecturer, Tecnológico de Monterrey</td><td>Machine learning, AI, databases</td></tr>
+              <tr><td>M.Sc. Jesús Antonio Low Castro</td><td>PhD Candidate, Tecnológico de Monterrey (ITESM)</td><td>Machine learning</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="footnote">Roles and affiliations as known at proposal time; titles to be confirmed for the final program.</p>
+      </div>
+    </section>
+
+    <section id="cfp" class="section section-alt">
+      <div class="container narrow">
+        <h2>Call for Papers</h2>
+
+        <div class="cfp-status">
+          <span class="status-dot" aria-hidden="true"></span>
+          The Call for Papers will open upon official acceptance of the workshop by MICAI 2026.
+        </div>
+
+        <h3>Submission &amp; Proceedings</h3>
+        <ul>
+          <li><strong>Submissions:</strong> handled through the dedicated track in the MICAI CMT system, formatted per the MICAI / Springer LNAI author guidelines.</li>
+          <li><strong>Review:</strong> double-blind, with 2–3 reviews per paper.</li>
+          <li><strong>Proceedings:</strong> accepted workshop papers will appear in the <strong>Springer LNAI</strong> series, indexed in Scopus, DBLP, EI Compendex, and others.</li>
+          <li><strong>Language:</strong> English.</li>
+          <li><strong>Expected participation:</strong> 20–40 attendees and an estimated 8–14 submissions.</li>
+        </ul>
+
+        <h3>Dissemination</h3>
+        <p>
+          The Call for Papers will be distributed through MICAI / SMIA channels,
+          relevant mailing lists (ML-news, FL portal), social media, and the
+          organizers' academic networks across Mexico and Latin America. Submission
+          instructions, deadlines, and the final program will be published on this
+          page once the workshop is confirmed.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container narrow">
+        <h2>Contact</h2>
+        <p>
+          For questions about the workshop, please contact the Workshop Chair:
+        </p>
+        <p class="contact-block">
+          <strong>Dr. Iván Reyes Amezcua</strong><br />
+          Tecnológico de Monterrey &amp; Layer7<br />
+          <a href="mailto:reyes.ivan@tec.mx">reyes.ivan@tec.mx</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="images/icon_logo_square.png" alt="" class="footer-icon" />
+        <div>
+          <p class="footer-title">BeMoSys · Beyond the Model</p>
+          <p class="footer-sub">ML Systems, Federated Learning, and MLOps · MICAI 2026 Workshop Proposal</p>
+        </div>
+      </div>
+      <p class="footer-meta">
+        Submitted to the 25th Mexican International Conference on Artificial
+        Intelligence (MICAI 2026), Chihuahua, Mexico, November 2–6, 2026.
+        Workshop proposal currently under review.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
