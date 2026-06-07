@@ -95,7 +95,7 @@ p { margin: 0 0 1em; }
 }
 .brand { border-bottom: none; display: inline-flex; }
 .brand-logo {
-  height: 44px;
+  height: 68px;
   width: auto;
   display: block;
 }
@@ -386,5 +386,5 @@ p { margin: 0 0 1em; }
   .site-nav { width: 100%; }
   .hero { padding: 2.5rem 0 2rem; }
   .section { padding: 2.5rem 0; }
-  .brand-logo { height: 38px; }
+  .brand-logo { height: 54px; }
 }
