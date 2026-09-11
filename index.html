@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BeMoSys · Beyond the Model: ML Systems, Federated Learning, and MLOps · MICAI 2026</title>
-  <meta name="description" content="BeMoSys is a half-day academic workshop accepted at MICAI 2026 (Chihuahua, Mexico) on Machine Learning Systems, Federated Learning, and MLOps. Call for Papers now open." />
+  <meta name="description" content="BeMoSys is a half-day workshop at MICAI 2026 (Chihuahua, Mexico) on Machine Learning Systems, Federated Learning, and MLOps. Review is complete: four papers accepted, appearing in the Springer LNAI proceedings." />
   <link rel="icon" type="image/png" href="images/icon_logo_square.png" />
   <link rel="apple-touch-icon" href="images/icon_logo_square.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,11 +22,10 @@
       <nav class="site-nav" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#topics">Topics</a>
+        <a href="#papers">Papers</a>
         <a href="#program">Program</a>
         <a href="#organizers">Organizers</a>
-        <a href="#committee">Committee</a>
-        <a href="#cfp">Call for Papers</a>
-        <a href="#dates">Dates</a>
+        <a href="#cfp">Submissions</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -36,18 +35,18 @@
 
     <section class="hero">
       <div class="container">
-        <p class="kicker">MICAI 2026 · Accepted Workshop · BeMoSys</p>
+        <p class="kicker">MICAI 2026 · BeMoSys · 4 papers accepted</p>
 
         <div class="hero-mid">
           <div class="hero-copy">
             <h1>Beyond the Model: Workshop on Machine Learning Systems, Federated Learning, and MLOps</h1>
             <p class="lede">
-              A focused academic forum on operationalizing machine learning at scale:
-              reproducible pipelines, drift monitoring, model governance, and
-              privacy-preserving learning across decentralized data.
+              Four hours at MICAI 2026 on the engineering that keeps machine learning
+              working after training ends: reproducible pipelines, drift monitoring,
+              model governance, and learning across data that cannot be pooled.
             </p>
             <p class="hero-cta">
-              <a class="submit-button" href="https://cmt3.research.microsoft.com/MICAI2026/Submission/Index" target="_blank" rel="noopener">Submit your paper &rarr;</a>
+              <a class="submit-button" href="#papers">Read the accepted papers &rarr;</a>
             </p>
           </div>
 
@@ -66,7 +65,7 @@
           <div><dt>Dates</dt><dd>November 2–6, 2026</dd></div>
           <div><dt>Format</dt><dd>Half day (4 hours) · English</dd></div>
           <div><dt>Proceedings</dt><dd>Springer LNAI (Scopus / DBLP indexed)</dd></div>
-          <div><dt>Acronym</dt><dd>BeMoSys</dd></div>
+          <div><dt>Accepted papers</dt><dd>4, selected by double-blind review</dd></div>
         </dl>
       </div>
     </section>
@@ -75,31 +74,29 @@
       <div class="container narrow">
         <h2 class="section-head">About the Workshop</h2>
         <p>
-          Training a high-accuracy model in a controlled setting is only a small part of
-          delivering machine learning that works in the real world. The harder,
-          less-published problems lie in <strong>operationalizing ML</strong>:
-          reproducible pipelines, continuous training and delivery, monitoring for data
-          and concept drift, governance, and the engineering discipline collectively
-          known as <strong>MLOps</strong>, and in <strong>learning across decentralized,
-          privacy-sensitive data</strong> through <strong>Federated Learning</strong>.
-          These strands meet under the broader umbrella of <em>machine learning systems</em>:
-          how models are built, deployed, maintained, and trusted at scale.
+          A model that scores well on a held-out split is the easy part. The harder
+          problems arrive afterwards, and they get published less: reproducible
+          pipelines, continuous training and delivery, monitoring for data and concept
+          drift, governance, and the engineering discipline known as
+          <strong>MLOps</strong>. A parallel set of problems appears when the data
+          cannot be pooled at all, which is where <strong>Federated Learning</strong>
+          comes in. Both belong to <em>machine learning systems</em>: how models get
+          built, deployed, maintained, and trusted at scale.
         </p>
         <p>
-          BeMoSys aims to create a focused forum at MICAI 2026 where researchers and
-          practitioners from Mexico, Latin America, and the broader international
-          community can share recent results, exchange engineering experience, and
-          discuss open problems at the intersection of ML systems, Federated Learning,
-          and MLOps. Special attention is given to settings common in the region:
-          heterogeneous data sources, limited infrastructure, regulatory constraints on
-          data sharing, and the need for cost-efficient, maintainable systems.
+          BeMoSys brings researchers and practitioners from Mexico, Latin America, and
+          further afield together at MICAI 2026 to present recent results, compare
+          engineering experience, and argue about open problems across these areas. We
+          pay particular attention to the conditions teams in the region actually work
+          under: heterogeneous data sources, limited infrastructure, regulatory limits
+          on data sharing, and budgets that reward maintainable systems over large ones.
         </p>
 
         <h3>Specific Objectives</h3>
         <ul class="objective-list">
           <li>Provide a peer-reviewed venue for original work on FL algorithms (Byzantine robustness, heterogeneity, privacy) and on MLOps practices (CI/CD for ML, drift monitoring, model governance).</li>
           <li>Surface real deployment experience, including negative results and engineering lessons rarely captured in mainstream conference tracks.</li>
-          <li>Foster collaboration between academia and industry around deployable, trustworthy ML systems.</li>
+          <li>Put academic and industry work on deployable, trustworthy ML systems in the same room.</li>
           <li>Strengthen the regional community working on production ML and privacy-preserving learning.</li>
         </ul>
       </div>
@@ -109,8 +106,8 @@
       <div class="container">
         <h2 class="section-head">Scope and Topics of Interest</h2>
         <p class="section-intro">
-          We invite original research papers, position papers, and experience reports
-          across three thematic axes. Topics include, but are not limited to:
+          The workshop covers three thematic axes, and the call welcomed research
+          papers, position papers, and experience reports across all of them:
         </p>
 
         <div class="topic-grid">
@@ -149,54 +146,157 @@
         </div>
 
         <p class="footnote">
-          <strong>Relation to prior workshops.</strong> BeMoSys deliberately unites
-          Federated Learning and MLOps under a single systems-oriented program, and
-          anchors it in the Latin American research context that MICAI serves, an
-          audience under-represented in international editions such as FL@FM (NeurIPS
-          2023–2024), the FL tracks at ICML and ICLR, MLOps sessions at ICML 2025,
-          and the Deployable AI workshop series at AAAI (2024–2026).
+          <strong>Relation to prior workshops.</strong> BeMoSys puts Federated Learning
+          and MLOps in a single systems-oriented program and anchors it in the Latin
+          American research context that MICAI serves, an audience under-represented in
+          international editions such as FL@FM (NeurIPS 2023–2024), the FL tracks at
+          ICML and ICLR, MLOps sessions at ICML 2025, and the Deployable AI workshop
+          series at AAAI (2024–2026).
         </p>
       </div>
     </section>
 
-    <section id="program" class="section">
+    <section id="papers" class="section">
+      <div class="container">
+        <h2 class="section-head">Accepted Papers</h2>
+        <p class="section-intro">
+          Four papers were accepted after double-blind review and will be presented at
+          the workshop in Chihuahua. All four appear in the MICAI 2026 Springer LNAI
+          proceedings. Abstracts below are shortened; the full versions are in the
+          proceedings.
+        </p>
+
+        <div class="paper-list">
+
+          <article class="paper-card">
+            <p class="paper-axis">Federated Learning · Privacy</p>
+            <h3 class="paper-title">PBS-FL: Anonymous Federated Learning with Verifiable Update Inclusion</h3>
+            <p class="paper-authors">Rocío Aldeco-Pérez, Oscar Manuel Ruiz Hurtado</p>
+            <p class="paper-affil">Engineering School and PCIC, UNAM, Mexico City, Mexico</p>
+            <p class="paper-abstract">
+              Cross-silo federated learning still needs mechanisms for participant
+              privacy and accountability. PBS-FL separates client authentication from
+              update submission using partially blind credentials and round-specific
+              anonymous identifiers on a permissioned blockchain, accepting at most one
+              contribution per authorized client per round. A lightweight Tally Hash
+              lets a client confirm its update was part of the aggregation input. The
+              prototype runs on Hyperledger Fabric and was evaluated on two credit-risk
+              datasets: predictive accuracy is unchanged, anonymous authorization adds
+              bounded overhead, and Tally Hash generation stayed under one millisecond.
+            </p>
+          </article>
+
+          <article class="paper-card">
+            <p class="paper-axis">MLOps · Recommender Systems</p>
+            <h3 class="paper-title">From Hybrid Ensembles to Graph Models: An MLOps-Driven Comparison of Collaborative Filtering for Online Judges</h3>
+            <p class="paper-authors">Wilson Julca-Mejía, Herminio Paucar-Curasma, Luzmila Elisa Pro-Concepción</p>
+            <p class="paper-affil">National University of San Marcos (UNMSM), Lima, Peru</p>
+            <p class="paper-abstract">
+              The authors re-evaluate their earlier kNN + SVD stacking ensemble for
+              recommending programming problems against implicit ALS, Neural
+              Collaborative Filtering, and LightGCN, all under one automated pipeline:
+              temporal splits, fixed-seed evaluation, parallel CI training, an MLflow
+              registry with champion selection, and drift monitoring that triggers
+              retraining. The two datasets give opposite verdicts. On CodeChef a
+              popularity baseline goes unbeaten and only LightGCN matches it
+              statistically; on Aizu popularity finishes last and implicit ALS wins
+              decisively. A catalog-subsampling control traces the contrast to the
+              temporal stability of item popularity (PSI 0.02 versus 0.72) rather than
+              catalog size. The original hybrid stack is uncompetitive on both.
+            </p>
+          </article>
+
+          <article class="paper-card">
+            <p class="paper-axis">LLMOps · Self-Monitoring Systems</p>
+            <h3 class="paper-title">Retrieval-Verification Separation: A Dual-Metric Architecture for Self-Monitoring RAG Systems</h3>
+            <p class="paper-authors">Jorge Gálvez, Ernesto Mendoza, Isaac Bolio, David Rodríguez</p>
+            <p class="paper-affil">Universidad de Guadalajara, CUCEI, Guadalajara, Mexico</p>
+            <p class="paper-abstract">
+              Most RAG pipelines use a single similarity metric both to retrieve context
+              and to certify that the context is relevant, which ties retrieval speed to
+              retrieval trust. IAssist-QCI, a RAG-based institutional assistant, splits
+              the two: a retrieval path optimized for fast candidate fetching over
+              chunk-level vector similarity, and a verification path that independently
+              computes a composite relevance score over the whole multi-chunk context
+              injected into the prompt. The split is what makes two further capabilities
+              possible: low verification scores become automated knowledge-gap alerts
+              that detect drift in the knowledge base without manual auditing, and an
+              asynchronous curation pipeline builds a synthetic question-answer dataset
+              for later fine-tuning without interrupting production traffic. Evaluation
+              uses relevance-score distributions and gap-alert rates from 30 days of
+              operation.
+            </p>
+          </article>
+
+          <article class="paper-card">
+            <p class="paper-axis">Experience Report · Data Lineage</p>
+            <h3 class="paper-title">When the Baseline Chases the Plant: Self-Reference, Auditability and Data Lineage in a Production Photovoltaic Monitoring Pipeline</h3>
+            <p class="paper-authors">Daniel Romero Villacís, David Fiallos Chamorro</p>
+            <p class="paper-affil">Tecnológico de Monterrey, Mexico · Sun Conservation S.A., Quito, Ecuador</p>
+            <p class="paper-abstract">
+              Three years of operating a Performance Ratio monitoring pipeline for seven
+              first-generation 1 MW AC photovoltaic plants in southern Ecuador, stitched
+              across five incompatible manufacturer platforms under limited
+              infrastructure and regulatory constraints on data sharing. Two findings
+              drive the report. A statistically functional conditional-percentile model
+              was retired in favour of a deterministic physical estimator because only
+              the latter is defensible before the national regulator, so auditability
+              decided the method, not accuracy. Then a ten-stage audit of the running
+              system found that the self-reference flaw identified in the retired model
+              had reappeared unnoticed in the alerting rule that replaced it: injecting
+              degradation into real series, the moving baseline absorbs 7.7 percentage
+              points of decay and never fires below 3%/month. The report also documents a
+              capacity denominator with no recorded provenance on all seven plants, and
+              draws six transferable lessons.
+            </p>
+          </article>
+
+        </div>
+
+        <p class="award-note">
+          <strong>Best Paper Award.</strong> One of the four papers will receive the
+          BeMoSys Best Paper Award. The winner is announced live during the workshop
+          session in Chihuahua.
+        </p>
+      </div>
+    </section>
+
+    <section id="program" class="section section-alt">
       <div class="container narrow">
         <h2 class="section-head">Format and Program</h2>
         <p>
-          A <strong>half-day, four-hour</strong> agenda balances peer-reviewed
-          presentations with a hands-on MLOps tutorial and discussion, designed for
-          an intimate, dynamic forum.
+          Four hours: an invited keynote, a hands-on MLOps tutorial, the four accepted
+          papers across two presentation sessions, and an open panel.
         </p>
 
         <div class="schedule">
           <table>
-            <caption class="visually-hidden">Tentative workshop schedule</caption>
+            <caption class="visually-hidden">Workshop schedule</caption>
             <thead>
               <tr><th scope="col">Time</th><th scope="col">Session</th></tr>
             </thead>
             <tbody>
-              <tr><td>0:00 – 0:15</td><td>Opening and overview by the organizers</td></tr>
-              <tr><td>0:15 – 1:00</td><td>Invited keynote on ML systems / Federated Learning / MLOps</td></tr>
-              <tr><td>1:00 – 1:40</td><td>Tutorial I: Hands-on MLOps: pipelines, CI/CD, and reproducibility</td></tr>
-              <tr><td>1:40 – 2:00</td><td>Break</td></tr>
-              <tr><td>2:00 – 3:00</td><td>Contributed paper presentations (Session I) and posters</td></tr>
-              <tr><td>3:00 – 3:30</td><td>Panel / open discussion on open problems and regional deployment</td></tr>
-              <tr><td>3:30 – 3:55</td><td>Contributed paper presentations (Session II)<sup>*</sup></td></tr>
-              <tr><td>3:55 – 4:00</td><td>Closing remarks</td></tr>
+              <tr><td>0:00 – 0:10</td><td>Opening and overview by the organizers</td></tr>
+              <tr><td>0:10 – 0:50</td><td>Invited keynote on ML systems / Federated Learning / MLOps</td></tr>
+              <tr><td>0:50 – 1:30</td><td>Tutorial: Hands-on MLOps: pipelines, CI/CD, and reproducibility</td></tr>
+              <tr><td>1:30 – 1:45</td><td>Break</td></tr>
+              <tr><td>1:45 – 2:35</td><td>Contributed papers, Session I (two papers, 25 min each)</td></tr>
+              <tr><td>2:35 – 3:25</td><td>Contributed papers, Session II (two papers, 25 min each)</td></tr>
+              <tr><td>3:25 – 3:50</td><td>Panel / open discussion on open problems and regional deployment</td></tr>
+              <tr><td>3:50 – 4:00</td><td>Best Paper Award and closing remarks</td></tr>
             </tbody>
           </table>
         </div>
 
         <p class="footnote">
-          <sup>*</sup> The agenda is indicative and will be finalized based on the
-          number of accepted papers. If submissions are limited, Session II will be
-          replaced by a second 40-minute hands-on MLOps tutorial (e.g., model
-          monitoring, drift detection, and deployment).
+          Presentation order and the keynote speaker will be confirmed in the official
+          MICAI 2026 program. Each accepted paper gets a 20-minute talk plus 5 minutes
+          of questions.
         </p>
       </div>
     </section>
 
-    <section id="organizers" class="section section-alt">
+    <section id="organizers" class="section">
       <div class="container">
         <h2 class="section-head">Organizing Committee</h2>
 
@@ -204,16 +304,16 @@
           <article class="organizer-card">
             <img src="images/ivan_reyes.jpg" alt="Dr. Iván Reyes Amezcua" class="organizer-photo" />
             <h3>Dr. Iván Reyes Amezcua <span class="role">· Workshop Chair</span></h3>
-            <p class="affiliation">ITESM Lecturer and ML/AI Engineer @Layer7</p>
+            <p class="affiliation">Postdoctoral Researcher, Tecnológico de Monterrey (ITESM)</p>
             <p>
               PhD in Computer Science (CINVESTAV), specializing in robust and
               scalable ML systems. Doctoral research on deep learning, federated
               learning, adversarial robustness, and computer vision, with applications
               in medical imaging, recipient of Best Paper Awards at MICAI, MICCAI, and
-              CVPR Workshops. ML/AI Engineer at Layer7 leading LLM architectures,
-              multi-agent systems, voice (TTS/STT) pipelines, and large-scale RAG
-              solutions. University lecturer at ITESM and MLflow Ambassador (Databricks),
-              with a strong emphasis on MLOps and reproducibility.
+              CVPR Workshops. Industry experience as an ML/AI Engineer at Layer7 on LLM
+              architectures, multi-agent systems, voice (TTS/STT) pipelines, and
+              large-scale RAG solutions. MLflow Ambassador (Databricks), with a strong
+              emphasis on MLOps and reproducibility.
             </p>
             <p class="contact"><a href="mailto:reyes.ivan@tec.mx">reyes.ivan@tec.mx</a></p>
           </article>
@@ -280,53 +380,21 @@
       </div>
     </section>
 
-    <section id="committee" class="section">
-      <div class="container">
-        <h2 class="section-head">Program Committee</h2>
-        <p class="section-intro">
-          The Program Committee brings together expertise across the three thematic
-          axes: federated learning and robustness, MLOps / ML engineering and data
-          governance, and applied ML across industry and medical domains, combining
-          academic and industry profiles. Reviews will follow a <strong>double-blind</strong>
-          process (target: 2–3 reviews per paper). The full Board of Reviewers is being
-          finalized and will be announced in the official program.
-        </p>
-
-        <div class="schedule">
-          <table>
-            <caption class="visually-hidden">Program Committee members</caption>
-            <thead>
-              <tr>
-                <th scope="col">Member</th>
-                <th scope="col">Affiliation</th>
-                <th scope="col">Area</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>Anonymous</td><td>Research Professor, Tecnológico de Monterrey</td><td>Machine learning, generative AI</td></tr>
-              <tr><td>Anonymous</td><td>Adjunct Professor, Tecnológico de Monterrey</td><td>ML, statistics, time series, data governance</td></tr>
-              <tr><td>Anonymous</td><td>Sr. Data Scientist, DD360; Extension Lecturer, Tec de Monterrey</td><td>Applied AI, MLOps, recommender systems</td></tr>
-              <tr><td>Anonymous</td><td>Professor, Tecnológico de Monterrey</td><td>Software quality, testing, simulation</td></tr>
-              <tr><td>Anonymous</td><td>Sr. Expert Data Scientist, BBVA AI Factory; Lecturer, Tec de Monterrey / U. Panamericana</td><td>Applied data science, ML in industry</td></tr>
-              <tr><td>Anonymous</td><td>Tecnológico de Monterrey / Université de Lorraine</td><td>Computer vision, medical imaging</td></tr>
-              <tr><td>Anonymous</td><td>Data Scientist, BBVA AI Factory; Lecturer, Tecnológico de Monterrey</td><td>Machine learning, AI, databases</td></tr>
-              <tr><td>Anonymous</td><td>PhD Candidate, Tecnológico de Monterrey (ITESM)</td><td>Machine learning</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="footnote">Roles and affiliations as currently known; titles to be confirmed for the final program.</p>
-      </div>
-    </section>
-
     <section id="cfp" class="section section-alt">
       <div class="container narrow">
-        <h2 class="section-head">Call for Papers</h2>
+        <h2 class="section-head">Submissions and Proceedings</h2>
 
-        <p class="cfp-cta">
-          <a class="submit-button" href="https://cmt3.research.microsoft.com/MICAI2026/Submission/Index" target="_blank" rel="noopener">Submit your paper &rarr;</a>
+        <p class="cfp-status">
+          <span class="status-dot" aria-hidden="true"></span>
+          Submissions are closed. Review is complete and four papers were accepted.
         </p>
-        <p class="footnote">
-          When submitting, make sure to <strong>select the BeMoSys workshop</strong> (Beyond the Model: ML Systems, Federated Learning, and MLOps) as the track in the CMT system, so your paper is routed to this workshop.
+
+        <p>
+          Papers went through double-blind review with 2–3 reviews each, in Springer
+          LNAI format and up to 12 pages, submitted through the MICAI 2026 CMT system
+          under the BeMoSys track. Accepted papers appear in the
+          <strong>Springer LNAI</strong> series, indexed in Scopus, DBLP, EI Compendex,
+          and others. The workshop language is English.
         </p>
 
         <h3 id="dates">Important Dates</h3>
@@ -334,39 +402,25 @@
           <table>
             <caption class="visually-hidden">Important dates for authors</caption>
             <thead>
-              <tr><th scope="col">Date</th><th scope="col">Milestone</th></tr>
+              <tr><th scope="col">Date</th><th scope="col">Milestone</th><th scope="col">Status</th></tr>
             </thead>
             <tbody>
-              <tr><td>22 Jun, 2026</td><td>Paper submission opens</td></tr>
-              <tr><td>15 Aug, 2026</td><td>Paper submission deadline</td></tr>
-              <tr><td>23 Aug, 2026</td><td>Notification of paper acceptance</td></tr>
-              <tr><td>30 Aug, 2026</td><td>Camera-ready submission of accepted papers</td></tr>
-              <tr><td>18 Sep, 2026</td><td>Early-bird registration for authors</td></tr>
-              <tr><td>16 Oct, 2026</td><td>Payment and registration deadline for authors</td></tr>
-              <tr><td>2–6 Nov, 2026</td><td>Conference</td></tr>
+              <tr class="is-done"><td>22 Jun, 2026</td><td>Paper submission opens</td><td>Done</td></tr>
+              <tr class="is-done"><td>15 Aug, 2026</td><td>Paper submission deadline</td><td>Closed</td></tr>
+              <tr class="is-done"><td>23 Aug, 2026</td><td>Notification of paper acceptance</td><td>Sent</td></tr>
+              <tr class="is-done"><td>30 Aug, 2026</td><td>Camera-ready submission of accepted papers</td><td>Done</td></tr>
+              <tr><td>18 Sep, 2026</td><td>Early-bird registration for authors</td><td>Upcoming</td></tr>
+              <tr><td>16 Oct, 2026</td><td>Payment and registration deadline for authors</td><td>Upcoming</td></tr>
+              <tr><td>2–6 Nov, 2026</td><td>Conference</td><td>Upcoming</td></tr>
             </tbody>
           </table>
         </div>
-        <p class="footnote">Dates follow the MICAI 2026 main conference schedule. Deadlines are at 23:59 Anywhere on Earth (AoE) unless otherwise stated.</p>
-
-        <h3>Submission &amp; Proceedings</h3>
-        <ul>
-          <li><strong>Submissions:</strong> handled through the <a href="https://cmt3.research.microsoft.com/MICAI2026/Submission/Index" target="_blank" rel="noopener">MICAI 2026 CMT system</a>; select the <strong>BeMoSys</strong> workshop track and format per the MICAI / Springer LNAI author guidelines.</li>
-          <li><strong>Paper types:</strong> completed research and work-in-progress papers are welcome.</li>
-          <li><strong>Length:</strong> up to 12 pages in Springer LNAI format.</li>
-          <li><strong>Review:</strong> double-blind, with 2–3 reviews per paper.</li>
-          <li><strong>Proceedings:</strong> accepted workshop papers will appear in the <strong>Springer LNAI</strong> series, indexed in Scopus, DBLP, EI Compendex, and others.</li>
-          <li><strong>Language:</strong> English.</li>
-          <li><strong>Author guidelines:</strong> see the <a href="https://micai.org/2026/authors/#guide_authors" target="_blank" rel="noopener">MICAI 2026 author guidelines</a> for full formatting and submission instructions.</li>
-        </ul>
-
-        <h3>Dissemination</h3>
-        <p>
-          The Call for Papers will be distributed through MICAI / SMIA channels,
-          relevant mailing lists (ML-news, FL portal), social media, and the
-          organizers' academic networks across Mexico and Latin America. Submission
-          instructions, deadlines, and the final program will be published on this
-          page as they are finalized.
+        <p class="footnote">
+          Dates follow the MICAI 2026 main conference schedule. Deadlines are at 23:59
+          Anywhere on Earth (AoE) unless otherwise stated. Authors of accepted papers
+          must register through the
+          <a href="https://micai.org/2026/" target="_blank" rel="noopener">MICAI 2026 site</a>
+          to have their paper included in the proceedings.
         </p>
       </div>
     </section>
@@ -375,11 +429,11 @@
       <div class="container narrow">
         <h2 class="section-head">Contact</h2>
         <p>
-          For questions about the workshop, please contact the Workshop Chair:
+          For questions about the workshop, contact the Workshop Chair:
         </p>
         <p class="contact-block">
           <strong>Dr. Iván Reyes Amezcua</strong><br />
-          ITESM Lecturer and ML/AI Engineer @Layer7<br />
+          Postdoctoral Researcher, ITESM<br />
           <a href="mailto:reyes.ivan@tec.mx">reyes.ivan@tec.mx</a>
         </p>
       </div>
@@ -399,7 +453,7 @@
       <p class="footer-meta">
         An official workshop of the 25th Mexican International Conference on Artificial
         Intelligence (MICAI 2026), Chihuahua, Mexico, November 2–6, 2026.
-        Accepted; Call for Papers now open.
+        Review is complete: four papers accepted, appearing in the Springer LNAI proceedings.
       </p>
     </div>
   </footer>
