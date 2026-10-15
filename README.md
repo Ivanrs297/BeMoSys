@@ -22,7 +22,7 @@ python3 -m http.server 8000
 
 ## Overview
 
-BeMoSys is a **half-day (4 hours)** academic workshop that brings together researchers and practitioners working at the intersection of:
+BeMoSys is a **half-day (3 hours)** academic workshop that brings together researchers and practitioners working at the intersection of:
 
 - **Federated Learning**: heterogeneity, Byzantine robustness, communication efficiency, federated foundation models.
 - **MLOps & ML Systems**: CI/CD for ML, drift monitoring, lineage, reproducibility, scalable serving.
