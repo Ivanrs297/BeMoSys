@@ -709,3 +709,26 @@ section[id] { scroll-margin-top: 124px; }
   .topic-card:hover, .organizer-card:hover, .paper-card:hover { transform: none; }
   .hero-medallion, .ring-dashed { animation: none; }
 }
+
+/* MICAI / SMIA partner logos */
+.hero-partners,
+.footer-partners {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.hero-partners { margin-top: 1.5rem; }
+.hero-partners-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-brass-soft);
+}
+.hero-partners a,
+.footer-partners a { border-bottom: none; line-height: 0; }
+.partner-logo { display: block; width: auto; opacity: 0.92; transition: opacity .15s ease; }
+.partner-logo:hover { opacity: 1; }
+.partner-micai { height: 40px; }
+.partner-smia { height: 56px; }

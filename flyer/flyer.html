@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>BeMoSys 2026 · Program Flyer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+<style>
+  @page { size: Letter; margin: 0; }
+  :root {
+    --ink: #0a1d3a;
+    --navy: #14346b;
+    --primary: #1f4e9c;
+    --accent: #3a7bd5;
+    --brass: #b9892f;
+    --brass-soft: #d8b25e;
+    --muted: #4a5a70;
+    --line: #dfe7f1;
+    --bg-alt: #f1f5fb;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    width: 8.5in; height: 11in; overflow: hidden;
+    font-family: "Inter", -apple-system, "Helvetica Neue", Arial, sans-serif;
+    color: #1f2937; background: #fff;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    display: flex; flex-direction: column;
+  }
+  body > * { flex-shrink: 0; }
+
+  /* Logo bar */
+  .logos {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0.26in 0.55in 0.18in;
+  }
+  .logos .bemosys { height: 0.74in; }
+  .logos .right { display: flex; align-items: center; gap: 0.32in; }
+  .logos .micai { height: 0.52in; }
+  .logos .smia { height: 0.72in; }
+
+  /* Title band */
+  .band {
+    position: relative; overflow: hidden;
+    color: #eaf1fb;
+    padding: 0.28in 0.55in 0.28in;
+    background:
+      radial-gradient(520px 300px at 85% -20%, rgba(58,123,213,0.38), transparent 60%),
+      linear-gradient(165deg, #0c2350 0%, #0a1d3a 55%, #081730 100%);
+    border-bottom: 4px solid var(--brass);
+  }
+  .band::before {
+    content: ""; position: absolute; inset: 0;
+    background-image: radial-gradient(rgba(140,180,240,0.2) 1.4px, transparent 1.5px);
+    background-size: 18px 18px;
+    -webkit-mask-image: radial-gradient(520px 320px at 90% 0%, #000 0%, transparent 75%);
+  }
+  .band > * { position: relative; }
+  .kicker {
+    font-size: 9.5pt; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--brass-soft); margin: 0 0 0.08in;
+  }
+  h1 {
+    font-family: "Source Serif 4", Georgia, serif; font-weight: 700;
+    font-size: 22pt; line-height: 1.12; margin: 0 0 0.18in; color: #fff;
+  }
+  .meta { display: grid; grid-template-columns: 1.05fr 0.85fr 1.35fr; gap: 0.2in; }
+  .meta dt {
+    font-size: 7.5pt; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--brass-soft); margin-bottom: 3pt;
+  }
+  .meta dd { margin: 0; font-size: 11.5pt; font-weight: 600; color: #fff; line-height: 1.3; }
+  .meta dd span { display: block; font-size: 9pt; font-weight: 400; color: #b9c8de; }
+
+  /* Program */
+  main { flex: 1 1 auto; padding: 0.2in 0.55in 0.04in; }
+  h2 {
+    font-family: "Source Serif 4", Georgia, serif; font-weight: 700;
+    font-size: 16pt; color: var(--ink); margin: 0 0 0.06in;
+    display: flex; align-items: baseline; gap: 10pt;
+  }
+  h2::after { content: ""; flex: 1; height: 1px; background: var(--line); transform: translateY(-4pt); }
+  .slot {
+    display: grid; grid-template-columns: 1.05in 1fr; gap: 0.18in;
+    padding: 0.08in 0; border-bottom: 1px solid var(--line);
+  }
+  .slot:last-child { border-bottom: none; }
+  .time { font-size: 10.5pt; font-weight: 700; color: var(--primary); padding-top: 2pt; font-variant-numeric: tabular-nums; }
+  .what { display: flex; gap: 0.14in; align-items: center; }
+  .what .txt { flex: 1; }
+  .label {
+    font-size: 7.5pt; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--brass); margin: 0 0 1pt;
+  }
+  .title { font-family: "Source Serif 4", Georgia, serif; font-size: 13pt; font-weight: 600; color: var(--ink); margin: 0; line-height: 1.2; }
+  .who { font-size: 9.5pt; color: var(--muted); margin: 2pt 0 0; }
+  .faces { display: flex; }
+  .faces img {
+    width: 0.5in; height: 0.5in; border-radius: 50%; object-fit: cover;
+    border: 2px solid #fff; box-shadow: 0 0 0 1px var(--line);
+  }
+  .faces img + img { margin-left: -0.1in; }
+
+  .papers { list-style: none; margin: 6pt 0 0; padding: 0; display: grid; gap: 4pt; }
+  .papers li {
+    background: var(--bg-alt); border-radius: 5px; padding: 4pt 8pt;
+    font-size: 8.4pt; line-height: 1.28; color: var(--muted);
+  }
+  .papers li b { display: block; color: var(--ink); font-weight: 600; font-size: 9.2pt; }
+
+  footer {
+    margin-top: auto;
+    background: var(--ink); color: #c2cfe2;
+    padding: 0.16in 0.55in; border-top: 4px solid var(--brass);
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 9pt;
+  }
+  footer .url { font-size: 12pt; font-weight: 700; color: #fff; letter-spacing: 0.02em; }
+  footer .right { text-align: right; line-height: 1.45; }
+</style>
+</head>
+<body>
+
+  <div class="logos">
+    <img class="bemosys" src="../images/logo_header.png" alt="BeMoSys · Beyond the Model" />
+    <div class="right">
+      <img class="micai" src="../images/micai2026_logo.png" alt="MICAI 2026" />
+      <img class="smia" src="../images/smia_logo.png" alt="Sociedad Mexicana de Inteligencia Artificial" />
+    </div>
+  </div>
+
+  <section class="band">
+    <p class="kicker">MICAI 2026 Workshop · Program</p>
+    <h1>Beyond the Model: Workshop on Machine Learning Systems, Federated Learning, and MLOps</h1>
+    <dl class="meta">
+      <div><dt>Date</dt><dd>Monday, November 2, 2026<span>Part of MICAI 2026, Nov 2–6</span></dd></div>
+      <div><dt>Time</dt><dd>11:00 – 14:00<span>Three hours · in English</span></dd></div>
+      <div><dt>Venue</dt><dd>Tecnológico de Monterrey<span>Campus Chihuahua, Chihuahua, Mexico</span></dd></div>
+    </dl>
+  </section>
+
+  <main>
+    <h2>Program</h2>
+
+    <div class="slot">
+      <div class="time">11:00 – 11:10</div>
+      <div class="what">
+        <div class="txt">
+          <p class="label">Opening</p>
+          <p class="title">Welcome and workshop overview</p>
+          <p class="who">Dr. Iván Reyes Amezcua · Workshop Chair, Tecnológico de Monterrey</p>
+        </div>
+        <div class="faces"><img src="../images/ivan_reyes.jpg" alt="" /></div>
+      </div>
+    </div>
+
+    <div class="slot">
+      <div class="time">11:10 – 11:40</div>
+      <div class="what">
+        <div class="txt">
+          <p class="label">Keynote</p>
+          <p class="title">Machine learning systems in industry</p>
+          <p class="who">Dr. Salvador Hinojosa</p>
+        </div>
+        <div class="faces"><img src="../images/salvador_hinojosa.jpg" alt="" /></div>
+      </div>
+    </div>
+
+    <div class="slot">
+      <div class="time">11:40 – 13:00</div>
+      <div class="txt">
+        <p class="label">Accepted papers · 15 min talk + 5 min Q&amp;A each</p>
+        <p class="title">Paper presentations and authors</p>
+        <ul class="papers">
+          <li><b>PBS-FL: Anonymous Federated Learning with Verifiable Update Inclusion</b>Rocío Aldeco-Pérez, Oscar Manuel Ruiz Hurtado · UNAM, Mexico</li>
+          <li><b>From Hybrid Ensembles to Graph Models: An MLOps-Driven Comparison of Collaborative Filtering for Online Judges</b>Wilson Julca-Mejía, Herminio Paucar-Curasma, Luzmila Elisa Pro-Concepción · UNMSM, Peru</li>
+          <li><b>Retrieval-Verification Separation: A Dual-Metric Architecture for Self-Monitoring RAG Systems</b>Jorge Gálvez, Ernesto Mendoza, Isaac Bolio, David Rodríguez · Universidad de Guadalajara, Mexico</li>
+          <li><b>When the Baseline Chases the Plant: Self-Reference, Auditability and Data Lineage in a Production Photovoltaic Monitoring Pipeline</b>Daniel Romero Villacís, David Fiallos Chamorro · Tecnológico de Monterrey, Mexico · Sun Conservation, Ecuador</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="slot">
+      <div class="time">13:00 – 13:50</div>
+      <div class="what">
+        <div class="txt">
+          <p class="label">Tutorial</p>
+          <p class="title">Hands-on MLOps</p>
+          <p class="who">Dr. Gerardo Rodríguez-Hernández · M.Sc. Ricardo Valdez Hernández</p>
+        </div>
+        <div class="faces"><img src="../images/gerardo_rodriguez.jpg" alt="" /><img src="../images/ricardo_valdez.jpg" alt="" /></div>
+      </div>
+    </div>
+
+    <div class="slot">
+      <div class="time">13:50 – 14:00</div>
+      <div class="txt">
+        <p class="label">Closing</p>
+        <p class="title">Best Paper Award and closing remarks</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <div class="url">bemosysworkshop.com</div>
+      Proceedings: Springer LNAI (Scopus / DBLP indexed)
+    </div>
+    <div class="right">
+      25th Mexican International Conference on Artificial Intelligence<br />
+      Contact: reyes.ivan@tec.mx
+    </div>
+  </footer>
+
+</body>
+</html>
