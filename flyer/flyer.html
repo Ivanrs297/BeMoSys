@@ -31,9 +31,9 @@
   /* Logo bar */
   .logos {
     display: flex; align-items: center; justify-content: space-between;
-    padding: 0.26in 0.55in 0.18in;
+    padding: 0.2in 0.55in 0.14in;
   }
-  .logos .bemosys { height: 0.74in; }
+  .logos .bemosys { height: 0.7in; }
   .logos .right { display: flex; align-items: center; gap: 0.32in; }
   .logos .micai { height: 0.52in; }
   .logos .smia { height: 0.72in; }
@@ -63,7 +63,7 @@
     font-family: "Source Serif 4", Georgia, serif; font-weight: 700;
     font-size: 22pt; line-height: 1.12; margin: 0 0 0.18in; color: #fff;
   }
-  .meta { display: grid; grid-template-columns: 1.05fr 0.85fr 1.35fr; gap: 0.2in; }
+  .meta { margin: 0; display: grid; grid-template-columns: 1.05fr 0.85fr 1.35fr; gap: 0.2in; }
   .meta dt {
     font-size: 7.5pt; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
     color: var(--brass-soft); margin-bottom: 3pt;
@@ -72,7 +72,7 @@
   .meta dd span { display: block; font-size: 9pt; font-weight: 400; color: #b9c8de; }
 
   /* Program */
-  main { flex: 1 1 auto; padding: 0.2in 0.55in 0.04in; }
+  main { flex: 1 1 auto; padding: 0.17in 0.55in 0.04in; }
   h2 {
     font-family: "Source Serif 4", Georgia, serif; font-weight: 700;
     font-size: 16pt; color: var(--ink); margin: 0 0 0.06in;
@@ -81,7 +81,7 @@
   h2::after { content: ""; flex: 1; height: 1px; background: var(--line); transform: translateY(-4pt); }
   .slot {
     display: grid; grid-template-columns: 1.05in 1fr; gap: 0.18in;
-    padding: 0.08in 0; border-bottom: 1px solid var(--line);
+    padding: 0.065in 0; border-bottom: 1px solid var(--line);
   }
   .slot:last-child { border-bottom: none; }
   .time { font-size: 10.5pt; font-weight: 700; color: var(--primary); padding-top: 2pt; font-variant-numeric: tabular-nums; }
@@ -102,7 +102,7 @@
 
   .papers { list-style: none; margin: 6pt 0 0; padding: 0; display: grid; gap: 4pt; }
   .papers li {
-    background: var(--bg-alt); border-radius: 5px; padding: 4pt 8pt;
+    background: var(--bg-alt); border-radius: 5px; padding: 3pt 8pt;
     font-size: 8.4pt; line-height: 1.28; color: var(--muted);
   }
   .papers li b { display: block; color: var(--ink); font-weight: 600; font-size: 9.2pt; }
@@ -116,6 +116,13 @@
   }
   footer .url { font-size: 12pt; font-weight: 700; color: #fff; letter-spacing: 0.02em; }
   footer .right { text-align: right; line-height: 1.45; }
+  .band-grid { display: grid; grid-template-columns: 1fr auto; gap: 0.3in; align-items: center; }
+  .qr-box { text-align: center; }
+  .qr-box img { display: block; width: 1.15in; height: 1.15in; background: #fff; border-radius: 6px; padding: 3px; }
+  .qr-box span {
+    display: block; margin-top: 5pt; font-size: 7pt; font-weight: 600; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--brass-soft);
+  }
 </style>
 </head>
 <body>
@@ -129,8 +136,16 @@
   </div>
 
   <section class="band">
-    <p class="kicker">MICAI 2026 Workshop · Program</p>
-    <h1>Beyond the Model: Workshop on Machine Learning Systems, Federated Learning, and MLOps</h1>
+    <div class="band-grid">
+      <div>
+        <p class="kicker">MICAI 2026 Workshop · Program</p>
+        <h1>Beyond the Model: Workshop on Machine Learning Systems, Federated Learning, and MLOps</h1>
+      </div>
+      <div class="qr-box">
+        <img src="qr_bemosys.svg" alt="QR code to bemosysworkshop.com" />
+        <span>Scan for details</span>
+      </div>
+    </div>
     <dl class="meta">
       <div><dt>Date</dt><dd>Monday, November 2, 2026<span>Part of MICAI 2026, Nov 2–6</span></dd></div>
       <div><dt>Time</dt><dd>11:00 – 14:00<span>Three hours · in English</span></dd></div>
@@ -147,9 +162,9 @@
         <div class="txt">
           <p class="label">Opening</p>
           <p class="title">Welcome and workshop overview</p>
-          <p class="who">Dr. Iván Reyes Amezcua · Workshop Chair, Tecnológico de Monterrey</p>
+          <p class="who">Dr. Iván Reyes Amezcua · Dr. Gilberto Ochoa-Ruiz · Tecnológico de Monterrey</p>
         </div>
-        <div class="faces"><img src="../images/ivan_reyes.jpg" alt="" /></div>
+        <div class="faces"><img src="../images/ivan_reyes.jpg" alt="" /><img src="../images/gilberto_ochoa.jpg" alt="" /></div>
       </div>
     </div>
 
@@ -168,8 +183,14 @@
     <div class="slot">
       <div class="time">11:40 – 13:00</div>
       <div class="txt">
-        <p class="label">Accepted papers · 15 min talk + 5 min Q&amp;A each</p>
-        <p class="title">Paper presentations and authors</p>
+        <div class="what">
+          <div class="txt">
+            <p class="label">Accepted papers · 15 min talk + 5 min Q&amp;A each</p>
+            <p class="title">Paper presentations and authors</p>
+            <p class="who">Session chair: M.Sc. Antonio Low</p>
+          </div>
+          <div class="faces"><img src="../images/antonio_low.jpg" alt="" /></div>
+        </div>
         <ul class="papers">
           <li><b>PBS-FL: Anonymous Federated Learning with Verifiable Update Inclusion</b>Rocío Aldeco-Pérez, Oscar Manuel Ruiz Hurtado · UNAM, Mexico</li>
           <li><b>From Hybrid Ensembles to Graph Models: An MLOps-Driven Comparison of Collaborative Filtering for Online Judges</b>Wilson Julca-Mejía, Herminio Paucar-Curasma, Luzmila Elisa Pro-Concepción · UNMSM, Peru</li>
